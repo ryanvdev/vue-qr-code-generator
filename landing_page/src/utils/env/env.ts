@@ -1,1 +1,3 @@
-export const WEB_NAME = 'Tạo QRcode online';
+export const WEB_NAME = 'Tạo QRcode Online';
+
+export const HOST = '';

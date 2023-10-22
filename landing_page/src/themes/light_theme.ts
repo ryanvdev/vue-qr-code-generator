@@ -3,12 +3,12 @@ import type { ThemeDefinition } from 'vuetify';
 const lightTheme: ThemeDefinition = {
     dark: false,
     colors: {
-        background: '#FFFFFF',
-        surface: '#FFFFFF',
-        'surface-bright': '#FFFFFF',
+        background: '#F6F4EB',
+        surface: '#91C8E4',
+        'surface-bright': '#91C8E4',
         'surface-variant': '#424242',
-        'on-surface-variant': '#EEEEEE',
-        primary: '#6200EE',
+        'on-surface-variant': '#91C8E4',
+        primary: '#4682A9',
         'primary-darken-1': '#3700B3',
         secondary: '#03DAC6',
         'secondary-darken-1': '#018786',

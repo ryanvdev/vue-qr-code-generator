@@ -29,7 +29,7 @@ const props = withDefaults(defineProps<Props>(), {
             src="/tao-qrcode-online-logo-64.png"
             alt="Tạo qrcode online logo"
         />
-        <span class="ml-2 text-h6">
+        <span class="ml-2 text-h6 text-on-surface">
             {{ __env.WEB_NAME }}
         </span>
     </router-link>

@@ -4,14 +4,14 @@ import { type ThemeDefinition } from 'vuetify';
 const darkTheme: ThemeDefinition = {
     dark: true,
     colors: {
-        background: '#121212',
-        surface: '#212121',
+        background: '#0F0F0F',
+        surface: '#232D3F',
         'surface-bright': '#ccbfd6',
         'surface-variant': '#a3a3a3',
         'on-surface-variant': '#424242',
-        primary: '#BB86FC',
+        primary: '#005B41',
         'primary-darken-1': '#3700B3',
-        secondary: '#03DAC5',
+        secondary: '#008170',
         'secondary-darken-1': '#03DAC5',
         error: '#CF6679',
         info: '#2196F3',

@@ -1,5 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-    <footer class="d-block w-100">ok</footer>
+    <v-footer class="d-block w-100">
+        <div class="d-block w-100">
+            <p class="text-center text-body-1 py-2">Thiết kế bởi TuanNguyen</p>
+        </div>
+    </v-footer>
 </template>

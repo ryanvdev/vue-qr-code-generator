@@ -79,7 +79,7 @@ defineExpose({
 });
 
 defineOptions({
-    inheritAttrs: false,
+    inheritAttrs: true,
 });
 </script>
 
@@ -92,7 +92,7 @@ defineOptions({
     display: block;
 
     width: 300px;
-    height: auto;
+    height: fit-content;
     aspect-ratio: 1;
 
     > * {
