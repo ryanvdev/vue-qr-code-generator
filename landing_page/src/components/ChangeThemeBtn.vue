@@ -17,7 +17,6 @@ const props = withDefaults(defineProps<Props>(), {
 const themeSelected = computed({
     get: useValue(() => {
         const arrayCaching: string[] = [''];
-        console.log('create new array');
         return () => {
             arrayCaching[0] = themeStore.global.name.value;
             return arrayCaching;

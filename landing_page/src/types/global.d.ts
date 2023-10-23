@@ -6,4 +6,8 @@ declare global {
               [k: string]: B;
           }
         : never;
+
+    interface IndexSignature<T = any> {
+        [key: string]: T;
+    }
 }

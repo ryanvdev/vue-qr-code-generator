@@ -80,6 +80,7 @@ input.disable-spin-button {
 }
 
 article {
+    line-height: 2em;
     h2,
     h3,
     h4,
@@ -88,11 +89,7 @@ article {
 
         width: 100%;
         height: fit-content;
-
-        padding: 10px 0px;
-    }
-    p {
-        line-height: 2em;
+        padding: 20px 0px 10px 0px;
     }
     a {
         color: rgb(var(--v-theme-primary));
@@ -100,4 +97,12 @@ article {
             text-decoration: underline;
         }
     }
+
+    ul {
+        padding-left: 10px;
+    }
+}
+
+.v-sheet.v-color-picker {
+    overflow-x: hidden !important;
 }
