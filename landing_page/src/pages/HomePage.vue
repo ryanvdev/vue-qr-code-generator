@@ -16,7 +16,7 @@ import ColorPickerButton from '@/components/ColorPickerButton.vue';
 
 const { mdAndUp } = useDisplay();
 
-const options = reactive<QRcodeOptions>(structuredClone(optionsRecord.classy));
+const options = reactive<QRcodeOptions>(structuredClone(optionsRecord.square));
 const qrcode = shallowRef(new QRcode());
 
 const inputValue = ref<string>(__env.WEB_URL);
@@ -82,6 +82,7 @@ const updateDebounceInputValue = _.debounce(
 watch(
     options,
     async (currentOptions) => {
+        console.log(currentOptions);
         // case input value empty
         if (!currentOptions.data || currentOptions.data.length === 0) {
             imageSrc.value = '';

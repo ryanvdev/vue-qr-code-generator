@@ -12,7 +12,7 @@ const optionsRecordKeys = [
     'extraRounded',
 ] as const;
 
-const baseOptions: QRcodeOptions = deepFreeze({
+export const baseOptions: QRcodeOptions = deepFreeze({
     height: 512,
     width: 512,
     data: __env.WEB_URL,
@@ -20,10 +20,10 @@ const baseOptions: QRcodeOptions = deepFreeze({
     shape: 'square',
     dotsOptions: {
         type: 'square',
-        color: '#00000000',
+        color: '#000000',
     },
     backgroundOptions: {
-        color: '#ffffffff',
+        color: '#ffffff',
     },
     qrOptions: {
         errorCorrectionLevel: 'L',
@@ -36,31 +36,37 @@ const optionsRecord: Record<(typeof optionsRecordKeys)[number], QRcodeOptions> =
     normal: structuredClone(baseOptions),
     classy: Object.assign(structuredClone(baseOptions), {
         dotsOptions: {
+            ...baseOptions.dotsOptions,
             type: 'classy',
         },
     } as QRcodeOptions),
     classyRounded: Object.assign(structuredClone(baseOptions), {
         dotsOptions: {
+            ...baseOptions.dotsOptions,
             type: 'classy-rounded',
         },
     } as QRcodeOptions),
     dots: Object.assign(structuredClone(baseOptions), {
         dotsOptions: {
+            ...baseOptions.dotsOptions,
             type: 'dots',
         },
     } as QRcodeOptions),
     rounded: Object.assign(structuredClone(baseOptions), {
         dotsOptions: {
+            ...baseOptions.dotsOptions,
             type: 'rounded',
         },
     } as QRcodeOptions),
     square: Object.assign(structuredClone(baseOptions), {
         dotsOptions: {
+            ...baseOptions.dotsOptions,
             type: 'square',
         },
     } as QRcodeOptions),
     extraRounded: Object.assign(structuredClone(baseOptions), {
         dotsOptions: {
+            ...baseOptions.dotsOptions,
             type: 'extra-rounded',
         },
     } as QRcodeOptions),
